@@ -251,9 +251,9 @@ class CupertinoSheetBottomRouteTransition extends StatelessWidget {
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarBrightness: Theme.of(context).brightness == Brightness.light ? Brightness.light : Brightness.dark,
-        statusBarIconBrightness: Theme.of(context).brightness == Brightness.light ? Brightness.light : Brightness.dark,
+        statusBarColor: Colors.green,
+        statusBarBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
       ),
       child: AnimatedBuilder(
         animation: secondaryAnimation,
