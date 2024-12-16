@@ -250,7 +250,7 @@ class CupertinoSheetBottomRouteTransition extends StatelessWidget {
     );
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.dark,
+      value: Theme.of(context).brightness == Brightness.dark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
       child: AnimatedBuilder(
         animation: secondaryAnimation,
         child: body,
